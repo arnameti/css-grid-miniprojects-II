@@ -104,6 +104,11 @@ Main Navbar
   display: inline-block;
   color: var(--primaryColor);
   padding: .7rem 0;
+  transition: var(--mainTransition);
+}
+
+.navbar a:hover {
+  color: var(--mainBlack);
 }
 
 @media screen and (min-width: 768px) {
@@ -123,7 +128,25 @@ Hero Project
 ===========================
 */
 
+.container {
+  height: 100vh;
+  background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)), 
+                              url(./images/image-2.jpeg) center/cover fixed no-repeat;
+  display: grid;
+  place-content: center;
+  color: var(--mainWhite);
+}
 
+.container p {
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    background: rgba(241, 80, 37, 0.75);
+  }
+}
 
 /* 
 ===========================

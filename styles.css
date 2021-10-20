@@ -1,0 +1,147 @@
+/* 
+===========================
+Variables
+===========================
+*/
+
+:root {
+  --primaryColor: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+
+/* 
+===========================
+Global Styles
+===========================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  color: var(--minBlack);
+  background: var(--mainWhite);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+
+/* button */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: capitalize;
+  border: solid 3px var(--primaryColor);
+  color: var(--primaryColor);
+  margin: 3rem;
+  padding: 0.5rem 1rem;
+  transition: var(--mainTransition);
+}
+
+.btn:hover {
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+}
+
+/* 
+===========================
+Main Navbar
+===========================
+*/
+
+.navbar {
+  background-color: var(--darkGrey);
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+
+.navbar a:link,
+.navbar a:visited {
+  display: inline-block;
+  color: var(--primaryColor);
+  padding: .7rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar ul {
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+  }
+}
+
+
+/* 
+===========================
+Hero Project
+===========================
+*/
+
+
+
+/* 
+===========================
+Card Project
+===========================
+*/
+
+
+/*
+===========================
+Tiles Project
+===========================
+*/
+
+
+/* 
+===========================
+Layout Project
+===========================
+*/
+
